@@ -22,6 +22,12 @@ func main() {
 	bob := person{}
 	fmt.Println(bob)
 
+	//assigning values to fields
+	bob.name = "Bob"
+	bob.age = 40
+	bob.pet = "Dog"
+	fmt.Println(bob)
+
 	//assigning non-empty struct literal
 	//style #1
 	julia := person{
@@ -37,5 +43,8 @@ func main() {
 		name: "Beth",
 	}
 	fmt.Println(beth)
+
+	fmt.Println("Name : ", beth.name)
+	fmt.Println("Age : ", beth.age)
 
 }
